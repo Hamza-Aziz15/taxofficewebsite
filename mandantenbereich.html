@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandantenbereich | Barbara Hermann Steuerberatung GbR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="fevicon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-block">
+                <div class="logo-title">Barbara Hermann</div>
+                <div class="logo-subtitle">Steuerberatung GbR</div>
+            </div>
+
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li class="nav-item has-dropdown">
+                    <a href="index.html" class="nav-link">Home <span class="arrow">▾</span></a>
+                    <ul class="dropdown">
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="fakten.html">Fakten</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="kanzleileitung.html" class="nav-link">Kanzleileitung <span class="arrow">▾</span></a>
+                    <ul class="dropdown">
+                        <li><a href="vita.html">Vita</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="kanzlei.html" class="nav-link">Kanzlei <span class="arrow">▾</span></a>
+                    <ul class="dropdown">
+                        <li><a href="team.html">Das Team</a></li>
+                        <li><a href="kooperationen.html">Kooperationen</a></li>
+                        <li><a href="mitgliedschaften.html">Mitgliedschaften</a></li>
+                        <li><a href="wir-stellen-ein.html">Wir stellen ein</a></li>
+                        <li><a href="engagement.html">Gemeinnütziges Engagement</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="mandantenbereich.html" class="nav-link">Mandantenbereich</a>
+                </li>
+                <li class="nav-item">
+                    <a href="digitalisierung.html" class="nav-link">Digitalisierung</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <header class="page-banner">
+        <div class="banner-content">
+            <h1>Mandantenbereich</h1>
+            <p>Barbara Hermann Steuerberatung GbR</p>
+        </div>
+    </header>
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout-container">
+
+        <!-- LEFT CONTENT -->
+        <main class="main-content">
+
+            <!-- INTRO TEXT -->
+            <h2 class="section-heading-band">Aktuelle Informationen</h2>
+            <div style="font-size:0.88rem; line-height:1.7; color:#333; margin-bottom:1.5rem;">
+                <p><strong>Aktuelle Informationen aus</strong></p>
+                <p>dem Steuerrecht</p>
+                <p>und dem Wirtschaftsrecht</p>
+                <br>
+                <p>von Fachverlagen</p>
+                <p style="color:#666; font-style:italic;">für die Vollständigkeit und Richtigkeit kann keine persönliche
+                    Verantwortung übernommen werden.</p>
+            </div>
+
+            <!-- ════════════════════════════════════════
+                 ACCORDION 1 — MANDANTENMERKBLÄTTER
+                 ════════════════════════════════════════ -->
+            <div class="mandanten-block">
+                <button class="mandanten-toggle open" onclick="toggleBlock(this)">
+                    Mandantenmerkblätter
+                    <span class="toggle-arrow">▼</span>
+                </button>
+                <div class="mandanten-body open">
+
+                    <!-- Merkblätter search -->
+                    <div class="merkblatt-search-wrap">
+                        <input type="text" placeholder="Suche Merkblätter…" oninput="filterMerkblaetter(this.value)">
+                        <span class="s-icon">🔍</span>
+                    </div>
+
+                    <!-- Alle Steuerzahler -->
+                    <div class="cat-group">
+                        <div class="cat-header">
+                            <div class="cat-icon-box">👤</div>
+                            Alle Steuerzahler
+                        </div>
+                        <ul class="cat-list">
+                            <li><a href="#">Belege für die Einkommensteuerberatung 2025</a><span
+                                    class="update-tag">[Update]</span></li>
+                            <li><a href="#">Influencer und Steuern</a></li>
+                            <li><a href="#">Vereine</a><span class="update-tag">[Update]</span></li>
+                            <li><a href="#">Abgrenzung von Herstellungs- und Erhaltungskosten</a><span
+                                    class="update-tag">[Update]</span></li>
+                            <li><a href="#">Außergewöhnliche Belastungen</a><span class="update-tag">[Update]</span>
+                            </li>
+                            <li><a href="#">Beratungscheck</a></li>
+                            <li><a href="#">Berliner Testament</a></li>
+                            <li><a href="#">Besteuerung der Rentner und Pensionäre</a><span
+                                    class="update-tag">[Update]</span></li>
+                            <li><a href="#">Besteuerungsverfahren</a></li>
+                            <li><a href="#">Eingetragene Lebenspartner</a></li>
+                            <li><a href="#">Elektronische Übermittlung von Steuererklärungen</a></li>
+                            <li><a href="#">Erbfolge und Testament</a></li>
+                            <li><a href="#">Erbschaftsteuer</a></li>
+                            <li><a href="#">Familienförderung</a></li>
+                            <li><a href="#">Gesundheitskosten</a></li>
+                            <li><a href="#">Haushaltsnahe Dienstleistungen</a></li>
+                            <li><a href="#">Heizungsgesetz – GEG-Novelle</a></li>
+                            <li><a href="#">Inflationsausgleichsprämie</a></li>
+                            <li><a href="#">Jobticket und Deutschlandticket: Steuerliche Aspekte</a></li>
+                            <li><a href="#">Korrekturverfahren</a></li>
+                            <li><a href="#">Kryptowährungen</a></li>
+                            <li><a href="#">Meldepflicht für Betreiber elektronischer Marktplätze</a></li>
+                            <li><a href="#">Private Veräußerungsgeschäfte</a></li>
+                            <li><a href="#">Scheidung</a></li>
+                            <li><a href="#">Schenkungsteuer</a></li>
+                            <li><a href="#">Sonderausgaben</a></li>
+                            <li><a href="#">Steuerberaterkosten</a></li>
+                            <li><a href="#">Steuerentlastungen 2023</a></li>
+                            <li><a href="#">Verträge zwischen nahen Angehörigen</a></li>
+                            <li><a href="#">Wohn-Riester</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Arbeitgeber und Arbeitnehmer -->
+                    <div class="cat-group">
+                        <div class="cat-header">
+                            <div class="cat-icon-box">📊</div>
+                            Arbeitgeber und Arbeitnehmer
+                        </div>
+                        <ul class="cat-list">
+                            <li><a href="#">Aktivrente</a><span class="update-tag">[Update]</span></li>
+                            <li><a href="#">Steuergünstige Gehaltszuwendungen</a><span
+                                    class="update-tag">[Update]</span></li>
+                            <li><a href="#">Fahrzeugnutzung durch Arbeitnehmer</a><span
+                                    class="update-tag">[Update]</span></li>
+                        </ul>
+                        <a href="#" class="more-link">Weitere Merkblätter und Checklisten »</a>
+                    </div>
+
+                    <!-- Hausbesitzer -->
+                    <div class="cat-group">
+                        <div class="cat-header">
+                            <div class="cat-icon-box">🏠</div>
+                            Hausbesitzer
+                        </div>
+                        <ul class="cat-list">
+                            <li><a href="#">Abgrenzung von Herstellungs- und Erhaltungskosten</a><span
+                                    class="update-tag">[Update]</span></li>
+                            <li><a href="#">Hausbesitzer</a></li>
+                            <li><a href="#">Photovoltaikanlagen</a></li>
+                        </ul>
+                        <a href="#" class="more-link">Weitere Merkblätter und Checklisten »</a>
+                    </div>
+
+                    <!-- Kapitalanleger -->
+                    <div class="cat-group">
+                        <div class="cat-header">
+                            <div class="cat-icon-box">💲</div>
+                            Kapitalanleger
+                        </div>
+                        <ul class="cat-list">
+                            <li><a href="#">Abgeltungsteuer</a></li>
+                            <li><a href="#">InvStG 2018</a></li>
+                            <li><a href="#">Kapitallebensversicherung</a></li>
+                            <li><a href="#">Kontrollen bei Kapitalanlagen und Selbstanzeige</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Unternehmer -->
+                    <div class="cat-group">
+                        <div class="cat-header">
+                            <div class="cat-icon-box">💼</div>
+                            Unternehmer
+                        </div>
+                        <ul class="cat-list">
+                            <li><a href="#">Ermäßigter Umsatzsteuersatz</a><span class="update-tag">[Update]</span></li>
+                            <li><a href="#">Vermögensverwaltende vs. gewerbliche Personengesellschaft</a><span
+                                    class="update-tag">[Update]</span></li>
+                            <li><a href="#">Abgabe von Speisen und Getränken ab 2026</a></li>
+                        </ul>
+                        <a href="#" class="more-link">Weitere Merkblätter und Checklisten »</a>
+                    </div>
+
+                    <div class="ds-footer-link"><a href="datenschutz.html">Datenschutzhinweis</a></div>
+
+                </div><!-- /mandanten-body -->
+            </div><!-- /mandanten-block -->
+
+
+            <!-- ════════════════════════════════════════
+                 ACCORDION 2 — MANDANTENINFORMATION
+                 ════════════════════════════════════════ -->
+            <div class="mandanten-block">
+                <button class="mandanten-toggle open" onclick="toggleBlock(this)">
+                    Mandanteninformation
+                    <span class="toggle-arrow">▼</span>
+                </button>
+                <div class="mandanten-body open">
+
+                    <!-- Steuertermine -->
+                    <div class="steuer-grid">
+                        <div class="steuer-col">
+                            <h3>Steuertermine April 2026</h3>
+                            <div class="steuer-entry">
+                                <div class="steuer-date-row">
+                                    <span class="steuer-date">10.04.</span>
+                                    <div class="steuer-taxes">
+                                        Umsatzsteuer<br>
+                                        Lohnsteuer*<br>
+                                        Solidaritätszuschlag*<br>
+                                        Kirchenlohnsteuer ev. und r.kath.*
+                                    </div>
+                                </div>
+                                <div class="steuer-note">
+                                    Zahlungsschonfrist: bis zum 13.04.2026. Diese Schonfrist gilt nicht bei Barzahlungen
+                                    und Zahlungen per Scheck. [* bei monatlicher Abführung für März 2026]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steuer-col">
+                            <h3>Steuertermine Mai 2026</h3>
+                            <div class="steuer-entry">
+                                <div class="steuer-date-row">
+                                    <span class="steuer-date">11.05.</span>
+                                    <div class="steuer-taxes">
+                                        Umsatzsteuer<br>
+                                        Lohnsteuer*<br>
+                                        Solidaritätszuschlag*<br>
+                                        Kirchenlohnsteuer ev. und r.kath.*
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="steuer-entry">
+                                <div class="steuer-date-row">
+                                    <span class="steuer-date">15.05.</span>
+                                    <div class="steuer-taxes">
+                                        Gewerbesteuer**<br>
+                                        Grundsteuer**
+                                    </div>
+                                </div>
+                                <div class="steuer-note">
+                                    Zahlungsschonfrist: bis zum 15.05. bzw. 18.05.2026. Diese Schonfrist gilt nicht bei
+                                    Barzahlungen und Zahlungen per Scheck. [* bei monatlicher Abführung für April 2026;
+                                    ** Vierteljahresrate an die Gemeinde]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News filter bar -->
+                    <div class="news-filter-bar">
+                        <select>
+                            <option>alle Zielgruppen</option>
+                            <option>Arbeitnehmer</option>
+                            <option>Unternehmer</option>
+                            <option>Hausbesitzer</option>
+                        </select>
+                        <input type="text" id="newsSearch" placeholder="Suchbegriff" oninput="filterNews(this.value)">
+                        <button class="n-search-btn">🔍</button>
+                    </div>
+
+                    <!-- News articles -->
+                    <div id="newsList">
+
+                        <div class="news-item"
+                            data-text="fehlender prozessbeteiligter mündliche verhandlung entscheidungserheblichen vortrag">
+                            <h4><a href="#">Fehlender Prozessbeteiligter: Mündliche Verhandlung muss bei neuem
+                                    entscheidungserheblichen Vortrag vertagt werden</a> <span
+                                    class="news-date-tag">(Mittwoch, 01.04.2026)</span></h4>
+                            <p>Es ist vor Gericht wie so oft im Leben: Reden hilft. So bringt eine mündliche Verhandlung
+                                häufig Bewegung in einen Prozess. Sie dient der persönlichen Anhörung der Beteiligten,
+                                der Erörterung des Sachverhalts, der Beweisaufnahme und der … <a href="#"
+                                    class="news-weiter">weiter</a></p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="staatliche neuverschuldung schuldenuhr steuerzahlerbund sekunde 6918">
+                            <h4><a href="#">Staatliche Neuverschuldung: Schuldenuhr des Steuerzahlerbundes beschleunigt
+                                    auf 6.918 EUR pro Sekunde</a> <span class="news-date-tag">(Mittwoch,
+                                    01.04.2026)</span></h4>
+                            <p>Die wachsende Staatsverschuldung in Deutschland wird seit Jahren vom Bund der
+                                Steuerzahler (BdSt) plakativ auf einer Schuldenuhr dargestellt. Aufgrund der gestiegenen
+                                Staatsschulden tickt die Uhr seit Anfang 2026 wieder deutlich schneller: Von … <a
+                                    href="#" class="news-weiter">weiter</a></p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="kinderbetreuungskosten sonderausgabenabzug haushaltszugehörigkeit kind kindergarten babysitter 4800">
+                            <h4><a href="#">Kinderbetreuungskosten: Sonderausgabenabzug darf an Haushaltszugehörigkeit
+                                    des Kinds geknüpft werden</a> <span class="news-date-tag">(Dienstag,
+                                    31.03.2026)</span></h4>
+                            <p>Ob Kindergarten, Babysitter, Hort oder Tagesmutter: Kosten für die Betreuung der eigenen
+                                Kinder können in der Einkommensteuererklärung als Sonderausgaben abgesetzt werden. Seit
+                                2025 lassen sich 80 % der Kinderbetreuungskosten, maximal 4.800 EUR … <a href="#"
+                                    class="news-weiter">weiter</a></p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="umsatzsteuer restaurant verpflegungsdienstleistungen 7 prozent cafes kantinen kitas 2026">
+                            <h4><a href="#">Weitere Klärung zur Umsatzsteuer: Restaurant- und
+                                    Verpflegungsdienstleistungen ab 01.01.2026</a> <span class="news-date-tag">(Montag,
+                                    30.03.2026)</span></h4>
+                            <p>Seit dem 01.01.2026 gilt in Deutschland der ermäßigte Umsatzsteuersatz von 7 % für
+                                Speisen in Restaurants, Cafes, Kantinen, Imbissbetrieben, im Catering sowie in Schulen
+                                und Kitas. Nur Getränke werden weiterhin mit 19 % besteuert. Die … <a href="#"
+                                    class="news-weiter">weiter</a></p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="neue vordrucke umsatzsteuer voranmeldungs vorauszahlungsverfahren 2026 bmf">
+                            <h4><a href="#">Neue Vordrucke: Umsatzsteuer-Voranmeldungs- und -Vorauszahlungsverfahren
+                                    2026</a> <span class="news-date-tag">(Sonntag, 29.03.2026)</span></h4>
+                            <p>Ab Januar 2026 gelten neue Vordrucke für das Umsatzsteuer-Voranmeldungs- und
+                                -Vorauszahlungsverfahren. Das Bundesfinanzministerium (BMF) hat die amtlichen Muster mit
+                                Schreiben vom 29.12.2025 veröffentlicht. … <a href="#" class="news-weiter">weiter</a>
+                            </p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="dienstwagen 1 prozent vorteil arbeitnehmer stellplatzkosten gegengerechnet">
+                            <h4><a href="#">1-%-Vorteil aus Dienstwagennutzung: Vom Arbeitnehmer getragene
+                                    Stellplatzkosten dürfen nicht gegengerechnet werden</a> <span
+                                    class="news-date-tag">(Samstag, 28.03.2026)</span></h4>
+                            <p>Dürfen Arbeitnehmer ihren Dienstwagen auch für private Zwecke nutzen, versteuern sie
+                                diesen geldwerten Vorteil häufig nach der sog. 1-%-Regelung. Sofern sie sich selbst an
+                                den Kosten des Dienstwagens beteiligen … <a href="#" class="news-weiter">weiter</a></p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="passfoto amt keine umsatzsteuer biometrische aufnahmen mecklenburg vorpommern finanzministerium">
+                            <h4><a href="#">Passfoto vom Amt: Keine Umsatzsteuer auf biometrische Aufnahmen</a> <span
+                                    class="news-date-tag">(Donnerstag, 26.03.2026)</span></h4>
+                            <p>Wer Passfotos im Amt machen lässt, zahlt lediglich eine Gebühr, keine Umsatzsteuer. Das
+                                Finanzministerium Mecklenburg-Vorpommern hat mit Erlass vom 16.10.2025 klargestellt,
+                                dass die Anfertigung biometrischer Lichtbilder durch Behörden steuerfrei … <a href="#"
+                                    class="news-weiter">weiter</a></p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="doppelte haushaltsführung ausland unterkunftskosten 2000 euro monat absetzbar 2026">
+                            <h4><a href="#">Doppelte Haushaltsführung im Ausland: Ab 2026 sind Unterkunftskosten bis
+                                    max. 2.000 EUR pro Monat absetzbar</a> <span class="news-date-tag">(Mittwoch,
+                                    25.03.2026)</span></h4>
+                            <p>Arbeitnehmer, die aus beruflichen Gründen einen doppelten Haushalt im Inland unterhalten,
+                                dürfen die Kosten für ihre Zweitwohnung nur mit max. 1.000 EUR pro Monat als
+                                Werbungskosten abziehen. Für Zweitwohnungen im Ausland galt bislang keine … <a href="#"
+                                    class="news-weiter">weiter</a></p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="zuständigkeit umsatzbesteuerung ungarischer unternehmer finanzamt nürnberg 2026">
+                            <h4><a href="#">Aktuelle Änderungen der Zuständigkeit: Umsatzbesteuerung ungarischer
+                                    Unternehmer</a> <span class="news-date-tag">(Dienstag, 24.03.2026)</span></h4>
+                            <p>Ein zentraler Ansprechpartner für ungarische Unternehmer in Deutschland wurde neu
+                                bestimmt: Zum 01.01.2026 hat das Finanzamt Nürnberg die Betreuung in umsatzsteuerlichen
+                                Angelegenheiten übernommen. … <a href="#" class="news-weiter">weiter</a></p>
+                        </div>
+
+                        <div class="news-item"
+                            data-text="digitale bekanntgabe steuerbescheide widerspruch 2026 nicht erforderlich 2027">
+                            <h4><a href="#">Digitale Bekanntgabe von Steuerbescheiden: Widerspruch ist für 2026 noch
+                                    nicht erforderlich</a> <span class="news-date-tag">(Dienstag, 24.03.2026)</span>
+                            </h4>
+                            <p>Nach den ursprünglichen Planungen des Gesetzgebers sollten elektronische Steuerbescheide
+                                bereits ab dem 01.01.2026 zur Regel und sollte Papier die Ausnahme werden. Nun wurden
+                                die Neuregelungen jedoch erst ab dem 01.01.2027 beschlossen, so dass … <a href="#"
+                                    class="news-weiter">weiter</a></p>
+                        </div>
+
+                    </div><!-- /#newsList -->
+
+                    <!-- Pagination -->
+                    <div class="pagination-row">
+                        <span class="pg-current">1</span>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">›</a>
+                        <a href="#">»</a>
+                    </div>
+
+                </div><!-- /mandanten-body -->
+            </div><!-- /mandanten-block -->
+
+            <div class="ds-footer-link" style="margin-bottom:1rem;">
+                <a href="datenschutz.html">Datenschutzhinweis</a>
+            </div>
+
+        </main><!-- /main-content -->
+
+        <!-- RIGHT SIDEBAR — identical to all other pages -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h4 class="sidebar-title">Öffnungszeiten</h4>
+                <div class="opening-hours">
+                    <div class="hours-row">
+                        <span>Mo.–Fr.</span>
+                        <span>08:00–16:30</span>
+                    </div>
+                    <div class="hours-row">
+                        <span>Sa.</span>
+                        <span>Geschlossen</span>
+                    </div>
+                    <div class="hours-row">
+                        <span>So.</span>
+                        <span>Geschlossen</span>
+                    </div>
+                    <p class="holiday-note">Feiertage ausgeschlossen</p>
+                </div>
+            </div>
+
+            <div class="sidebar-logos">
+                <img src="datev.png" alt="DATEV Mitglied">
+                <img src="stbv.png" alt="StBV Hessen">
+                <img src="stbk.png" alt="StBK Hessen">
+                <p style="font-size: 0.74rem; color: #555; text-align: center; margin-top: 0.5rem;">Mitglied des
+                    Steuerberaterverbands Hessen</p>
+            </div>
+        </aside>
+
+    </div><!-- /layout-container -->
+
+    <!-- FOOTER — identical to all other pages -->
+    <footer class="main-footer">
+        <div class="footer-left">
+            Bad Salzschlirf / Fulda / Alsfeld · 06.09.2025
+        </div>
+        <div class="footer-right">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        /* Toggle accordion open/close */
+        function toggleBlock(btn) {
+            btn.classList.toggle('open');
+            btn.nextElementSibling.classList.toggle('open');
+        }
+
+        /* Filter Merkblätter list by search input */
+        function filterMerkblaetter(val) {
+            const q = val.toLowerCase().trim();
+            document.querySelectorAll('.cat-list li').forEach(li => {
+                if (!q) { li.classList.remove('m-hidden'); return; }
+                li.classList.toggle('m-hidden', !li.textContent.toLowerCase().includes(q));
+            });
+        }
+
+        /* Filter news articles by search input */
+        function filterNews(val) {
+            const q = val.toLowerCase().trim();
+            document.querySelectorAll('#newsList .news-item').forEach(item => {
+                if (!q) { item.classList.remove('n-hidden'); return; }
+                const text = (item.dataset.text + ' ' + item.textContent).toLowerCase();
+                item.classList.toggle('n-hidden', !text.includes(q));
+            });
+        }
+    </script>
+</body>
+
+</html>

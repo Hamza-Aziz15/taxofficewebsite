@@ -1,0 +1,1375 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f5f5f0;
+    color: #1a1a2e;
+    line-height: 1.6;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #0d1b4b;
+    height: 65px;
+    padding: 0 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-block {
+    border-left: 3px solid #0d1b4b;
+    padding-left: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title {
+    color: #0d1b4b;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.logo-subtitle {
+    color: #0d1b4b;
+    font-weight: 400;
+    font-size: 0.72rem;
+    line-height: 1.2;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.nav-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 100%;
+    color: #1a1a2e;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #0d1b4b;
+}
+
+.arrow {
+    font-size: 0.6rem;
+    margin-left: 4px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #d0d5dd;
+    border-top: 2px solid #0d1b4b;
+    min-width: 220px;
+    list-style: none;
+    display: none;
+    z-index: 1001;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 0.6rem 1.2rem;
+    color: #1a1a2e;
+    font-size: 0.83rem;
+}
+
+.dropdown li a:hover {
+    background-color: #f5f5f0;
+    color: #0d1b4b;
+    border-left: 3px solid #0d1b4b;
+}
+
+/* MOBILE MENU BTN */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    width: 25px;
+    height: 3px;
+    background-color: #0d1b4b;
+}
+
+/* PAGE BANNER */
+.page-banner {
+    background: linear-gradient(135deg, #0d1b4b, #1a2a5e);
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.banner-content h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.banner-content p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+/* MAIN LAYOUT */
+.layout-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem 2.5rem;
+}
+
+.sidebar {
+    width: 210px;
+    background-color: #c8cdd6;
+    padding: 1.5rem 1rem;
+    flex-shrink: 0;
+}
+
+/* LEFT CONTENT STYLES */
+.section-heading-band {
+    background-color: #0d1b4b;
+    color: #ffffff;
+    padding: 0.55rem 1rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    color: #555;
+    font-style: italic;
+    font-size: 0.88rem;
+    margin-bottom: 0.3rem;
+}
+
+.location-text {
+    color: #555;
+    font-size: 0.83rem;
+    margin-bottom: 1.8rem;
+}
+
+.intro-paragraph {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.75;
+    margin-bottom: 1.2rem;
+}
+
+/* SERVICE CATEGORIES */
+.service-category h3 {
+    font-weight: 700;
+    color: #0d1b4b;
+    font-size: 0.9rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.25rem;
+    border-left: 3px solid #0d1b4b;
+    padding-left: 0.6rem;
+}
+
+.service-category ul {
+    list-style: disc;
+    padding-left: 1.4rem;
+    color: #333;
+    font-size: 0.86rem;
+    line-height: 1.85;
+}
+
+.team-photo {
+    width: 100%;
+    max-width: 560px;
+    margin-top: 2rem;
+    display: block;
+    border: 1px solid #d0d5dd;
+}
+
+/* SIDEBAR STYLES */
+.sidebar-title {
+    font-weight: 700;
+    font-size: 0.84rem;
+    color: #1a1a2e;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.7rem;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.81rem;
+    margin-bottom: 0.2rem;
+}
+
+.holiday-note {
+    font-style: italic;
+    font-size: 0.74rem;
+    color: #555;
+    margin-top: 0.4rem;
+}
+
+.sidebar-logos {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.sidebar-logos img {
+    max-width: 110px;
+    background-color: #ffffff;
+    padding: 4px;
+    border: 1px solid #bbb;
+}
+
+.sidebar-photo {
+    margin-top: 1.5rem;
+}
+
+.sidebar-photo img {
+    width: 100%;
+    border: 1px solid #bbb;
+}
+
+/* FOOTER */
+.main-footer {
+    background-color: #0d1b4b;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, 
+.footer-right a {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.77rem;
+}
+
+.footer-right {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.footer-right a:hover {
+    color: #ffffff;
+}
+
+/* ADDRESS BLOCKS (KONTAKT PAGE) */
+.address-blocks {
+    margin-top: 1.5rem;
+}
+
+.address-block {
+    border-bottom: 1px solid #d0d5dd;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 0.88rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.address-block:last-child {
+    border-bottom: none;
+}
+
+.address-block .company-name {
+    font-weight: 600;
+    color: #0d1b4b;
+}
+
+.address-block .intro-line {
+    color: #555;
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+/* EMAIL SECTION (KONTAKT PAGE) */
+.email-section {
+    margin-top: 1.5rem;
+}
+
+.email-section h4 {
+    font-weight: 700;
+    color: #0d1b4b;
+    font-size: 0.9rem;
+    border-left: 3px solid #0d1b4b;
+    padding-left: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.email-row {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    font-size: 0.87rem;
+    margin-bottom: 0.4rem;
+}
+
+.email-row a {
+    color: #0d1b4b;
+}
+
+.email-row a:hover {
+    text-decoration: underline;
+}
+
+.email-label {
+    color: #555;
+    font-size: 0.83rem;
+}
+
+/* FACTS LIST (FAKTEN PAGE) */
+.facts-list {
+    list-style: disc;
+    padding-left: 1.4rem;
+    color: #333;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+/* ==========================================================================
+   TIMELINE & GRID COMPONENTS (Global)
+   ========================================================================== */
+
+/* Timeline Table (Vita) */
+.timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 0.88rem;
+    color: #333;
+}
+
+.timeline-table td {
+    padding: 0.8rem 0;
+    vertical-align: top;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.timeline-date {
+    width: 120px;
+    font-weight: 700;
+    color: #0d1b4b;
+    padding-right: 1.5rem !important;
+}
+
+.timeline-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Benefits Grid (Jobs) */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 2rem;
+    font-size: 0.88rem;
+    color: #333;
+}
+
+.benefit-item {
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.benefit-item::before {
+    content: "✓";
+    color: #0d1b4b;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}/* ==========================================================================
+   MOBILE RESPONSIVENESS
+   ========================================================================== */
+
+/* ── TABLET + PHONE (≤ 768px) ── */
+@media (max-width: 768px) {
+
+    /* PREVENT HORIZONTAL OVERFLOW GLOBALLY */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 0 1rem;
+        height: 60px;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .logo-block {
+        padding-left: 0.5rem;
+    }
+
+    .logo-title {
+        font-size: 0.9rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 2px solid #0d1b4b;
+        height: auto;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+        padding: 0.5rem 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        padding: 0.9rem 1.5rem;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 0.88rem;
+    }
+
+    .nav-item.has-dropdown .nav-link .arrow {
+        transition: transform 0.3s;
+        margin-left: auto;
+    }
+
+    .nav-item.active .nav-link .arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown {
+        position: static;
+        display: none;
+        width: 100%;
+        border: none;
+        background-color: #f3f4f8;
+        min-width: 100%;
+        padding-left: 0;
+        box-shadow: none;
+    }
+
+    .nav-item.active .dropdown {
+        display: block;
+    }
+
+    .dropdown li a {
+        padding: 0.75rem 2rem;
+        font-size: 0.83rem;
+        border-bottom: 1px solid #eee;
+        display: block;
+    }
+
+    /* PAGE BANNER */
+    .page-banner {
+        height: auto;
+        padding: 1.75rem 1.25rem;
+    }
+
+    .banner-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .banner-content p {
+        font-size: 0.82rem;
+    }
+
+    /* MAIN LAYOUT */
+    .layout-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 1.5rem 1.25rem;
+        width: 100%;
+        min-width: 0; /* prevent flex children from overflowing */
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 1.5rem 1.25rem;
+        border-top: 1px solid #ddd;
+        background-color: #c8cdd6;
+    }
+
+    /* SIDEBAR */
+    .sidebar-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .sidebar-logos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-top: 1rem;
+    }
+
+    .sidebar-logos img {
+        max-width: 80px;
+    }
+
+    .sidebar-photo {
+        margin-top: 1.5rem;
+    }
+
+    .sidebar-photo img {
+        max-width: 100%;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* TEXT OVERFLOW PREVENTION */
+    p, li, td, span, h1, h2, h3, h4, h5 {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* COMPONENTS */
+    .benefits-grid, .steuer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem !important;
+    }
+
+    .steuer-col:first-child {
+        border-right: none !important;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* TIMELINE TABLE */
+    .timeline-table {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .timeline-table tr {
+        display: flex;
+        flex-direction: column;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .timeline-table td {
+        padding: 0.2rem 0 !important;
+        border-bottom: none !important;
+        width: 100% !important;
+    }
+
+    .timeline-date {
+        font-size: 0.82rem;
+        margin-bottom: 0.25rem;
+        padding-right: 0 !important;
+        color: #0d1b4b;
+    }
+
+    /* SECTION HEADING */
+    .section-heading-band {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+        line-height: 1.4;
+    }
+
+    /* EMAIL */
+    .email-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .email-row a {
+        word-break: break-all;
+        font-size: 0.82rem;
+    }
+
+    /* IMAGES */
+    .team-photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .main-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+        padding: 1.25rem 1rem;
+    }
+
+    .footer-right {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    /* BACK TO TOP */
+    .back-to-top {
+        width: 3rem;
+        height: 3rem;
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
+
+    /* JOB PAGE */
+    .benefits-section {
+        padding: 1rem;
+    }
+
+    .btn-apply {
+        width: 100%;
+        text-align: center;
+        padding: 0.9rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .apply-cta {
+        padding: 1.25rem 1rem;
+    }
+}
+
+/* ── SMALL PHONES — iPhone 12 Pro and similar (≤ 430px) ── */
+@media (max-width: 430px) {
+
+    /* NAVBAR */
+    .navbar {
+        height: 56px;
+        padding: 0 0.875rem;
+    }
+
+    .logo-title {
+        font-size: 0.85rem;
+    }
+
+    .logo-subtitle {
+        font-size: 0.6rem;
+    }
+
+    .nav-links {
+        top: 56px;
+        max-height: calc(100vh - 56px);
+    }
+
+    .nav-link {
+        padding: 0.85rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    .dropdown li a {
+        padding: 0.7rem 1.75rem;
+        font-size: 0.82rem;
+    }
+
+    /* PAGE BANNER */
+    .page-banner {
+        padding: 1.5rem 1rem;
+    }
+
+    .banner-content h1 {
+        font-size: 1.15rem;
+    }
+
+    .banner-content p {
+        font-size: 0.78rem;
+    }
+
+    /* MAIN CONTENT */
+    .main-content {
+        padding: 1.25rem 1rem;
+    }
+
+    .sidebar {
+        padding: 1.25rem 1rem;
+    }
+
+    /* TEXT SIZES */
+    .section-heading-band {
+        font-size: 0.8rem;
+        padding: 0.45rem 0.75rem;
+    }
+
+    .intro-paragraph,
+    .job-description,
+    .address-block {
+        font-size: 0.85rem;
+        line-height: 1.65;
+    }
+
+    .service-category ul {
+        font-size: 0.83rem;
+    }
+
+    .service-category h3 {
+        font-size: 0.85rem;
+    }
+
+    /* TEAM MEMBER LAYOUT — stack vertically on tiny screens */
+    .team-member {
+        flex-direction: column;
+    }
+
+    .team-member-info {
+        width: 100%;
+    }
+
+    .team-member-photo {
+        width: 80px;
+        height: 80px;
+        margin-top: 0.75rem;
+        align-self: flex-start;
+    }
+
+    /* SIDEBAR LOGOS */
+    .sidebar-logos img {
+        max-width: 65px;
+    }
+
+    /* FOOTER */
+    .main-footer {
+        padding: 1rem;
+        font-size: 0.72rem;
+    }
+
+    .footer-left {
+        font-size: 0.72rem;
+    }
+
+    .footer-right a {
+        font-size: 0.72rem;
+    }
+
+    /* ADDRESS */
+    .address-block {
+        font-size: 0.85rem;
+    }
+
+    /* EMAIL */
+    .email-section h4 {
+        font-size: 0.85rem;
+    }
+
+    /* STEUER & BENEFITS */
+    .steuer-col h3 {
+        font-size: 0.82rem;
+    }
+
+    .steuer-date {
+        font-size: 0.78rem;
+    }
+
+    .steuer-taxes {
+        font-size: 0.76rem;
+    }
+
+    /* APPLY BUTTON */
+    .btn-apply {
+        font-size: 0.85rem;
+        padding: 0.85rem 1rem;
+        letter-spacing: 0.5px;
+    }
+
+    /* BACK TO TOP */
+    .back-to-top {
+        width: 2.75rem;
+        height: 2.75rem;
+        right: 1rem;
+        bottom: 1rem;
+    }
+}
+
+/* ==========================================================================
+   MANDANTENBEREICH STYLES (Moved from mandantenbereich.html)
+   ========================================================================== */
+
+/* ── ACCORDION BLOCKS ── */
+.mandanten-block {
+    border: 1px solid #dde2ee;
+    margin-bottom: 1.2rem;
+    background: #fff;
+}
+
+.mandanten-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: #eef0f5;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0d1b4b;
+    border: none;
+    width: 100%;
+    text-align: left;
+    transition: background 0.2s;
+}
+
+.mandanten-toggle:hover {
+    background: #e2e6f0;
+}
+
+.mandanten-toggle::before {
+    content: '•';
+    color: #0d1b4b;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.mandanten-toggle .toggle-arrow {
+    margin-left: auto;
+    font-size: 0.7rem;
+    color: #666;
+    transition: transform 0.25s ease;
+    flex-shrink: 0;
+}
+
+.mandanten-toggle.open .toggle-arrow {
+    transform: rotate(180deg);
+}
+
+.mandanten-body {
+    display: none;
+    padding: 1rem 1.2rem 1.2rem;
+}
+
+.mandanten-body.open {
+    display: block;
+}
+
+/* ── MERKBLÄTTER SEARCH ── */
+.merkblatt-search-wrap {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0.35rem 0.7rem;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.merkblatt-search-wrap input {
+    border: none;
+    outline: none;
+    font-size: 0.85rem;
+    flex: 1;
+    color: #555;
+    font-family: inherit;
+    background: transparent;
+}
+
+.merkblatt-search-wrap .s-icon {
+    color: #999;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* ── CATEGORY GROUPS ── */
+.cat-group {
+    margin-bottom: 1.2rem;
+}
+
+.cat-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #0d1b4b;
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    border-radius: 2px;
+}
+
+.cat-icon-box {
+    width: 26px;
+    height: 26px;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.cat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cat-list li {
+    padding: 0.25rem 0.3rem;
+    border-bottom: 1px dotted #ddd;
+    font-size: 0.82rem;
+}
+
+.cat-list li:last-child {
+    border-bottom: none;
+}
+
+.cat-list a {
+    color: #1a3a8c;
+    text-decoration: none;
+}
+
+.cat-list a:hover {
+    text-decoration: underline;
+}
+
+.update-tag {
+    color: #888;
+    font-size: 0.75rem;
+    margin-left: 3px;
+}
+
+.cat-list li.m-hidden {
+    display: none;
+}
+
+.more-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #1a3a8c;
+    text-decoration: none;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
+/* ── STEUERTERMINE GRID ── */
+.steuer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-top: 1px solid #ddd;
+    padding-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.steuer-col {
+    padding: 0 0.8rem;
+}
+
+.steuer-col:first-child {
+    border-right: 1px solid #ddd;
+    padding-left: 0;
+}
+
+.steuer-col h3 {
+    font-size: 0.9rem;
+    color: #0d1b4b;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    border-bottom: 2px solid #0d1b4b;
+    padding-bottom: 0.2rem;
+}
+
+.steuer-entry {
+    margin-bottom: 0.7rem;
+}
+
+.steuer-date-row {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 0.25rem;
+}
+
+.steuer-date {
+    font-weight: 700;
+    font-size: 0.82rem;
+    min-width: 38px;
+    color: #222;
+    flex-shrink: 0;
+}
+
+.steuer-taxes {
+    font-size: 0.8rem;
+    color: #333;
+    line-height: 1.55;
+}
+
+.steuer-note {
+    font-size: 0.75rem;
+    color: #555;
+    background: #f8f8f8;
+    padding: 0.35rem 0.5rem;
+    border-left: 2px solid #ccc;
+    margin-top: 0.3rem;
+    line-height: 1.5;
+}
+
+/* ── NEWS SEARCH BAR ── */
+.news-filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.8rem;
+    background: #eef0f5;
+    border-top: 1px solid #dde2ee;
+    border-bottom: 1px solid #dde2ee;
+    margin-bottom: 0.6rem;
+}
+
+.news-filter-bar select {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    color: #333;
+    font-family: inherit;
+    border-radius: 2px;
+}
+
+.news-filter-bar input {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    background: #fff;
+    border-radius: 2px;
+    outline: none;
+    font-family: inherit;
+    color: #555;
+}
+
+.news-filter-bar .n-search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* ── NEWS ITEMS ── */
+.news-item {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item h4 {
+    font-size: 0.85rem;
+    color: #0d1b4b;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+    line-height: 1.4;
+}
+
+.news-item h4 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.news-item h4 a:hover {
+    text-decoration: underline;
+}
+
+.news-date-tag {
+    font-weight: 400;
+    color: #666;
+    font-size: 0.78rem;
+}
+
+.news-item p {
+    font-size: 0.8rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.news-weiter {
+    color: #1a3a8c;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.news-weiter:hover {
+    text-decoration: underline;
+}
+
+.news-item.n-hidden {
+    display: none;
+}
+
+/* ── PAGINATION ── */
+.pagination-row {
+    padding: 0.6rem 0 0.2rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.pagination-row a,
+.pagination-row span {
+    display: inline-block;
+    padding: 2px 7px;
+    font-size: 0.78rem;
+    color: #1a3a8c;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.pagination-row a:hover {
+    background: #0d1b4b;
+    color: #fff;
+}
+
+.pagination-row .pg-current {
+    background: #0d1b4b;
+    color: #fff;
+    border-color: #0d1b4b;
+}
+
+/* ── DATENSCHUTZ FOOTER LINK ── */
+.ds-footer-link {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.ds-footer-link a {
+    color: #1a3a8c;
+    text-decoration: none;
+}
+
+.ds-footer-link a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   INTERACTIVE UI ENHANCEMENTS
+   ========================================================================== */
+
+/* ── BACK TO TOP BUTTON ── */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #0d1b4b;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(13, 27, 75, 0.4);
+    border: none;
+    font-size: 1.25rem;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #1a2a5e;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(13, 27, 75, 0.5);
+}
+
+.back-to-top svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+}
+
+/* ==========================================================================
+   JOBS PAGE STYLES (wir-stellen-ein.html)
+   ========================================================================== */
+
+.jobs-intro {
+    margin-bottom: 2rem;
+}
+
+.jobs-intro h3 {
+    color: #0d1b4b;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-positions {
+    margin-top: 2rem;
+}
+
+.job-item {
+    margin-bottom: 2.5rem;
+}
+
+.job-title {
+    font-weight: 700;
+    color: #0d1b4b;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.job-description {
+    font-size: 0.92rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.benefits-section {
+    background-color: #e8eaf0;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-left: 4px solid #0d1b4b;
+}
+
+.benefits-title {
+    font-weight: 700;
+    color: #0d1b4b;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ── APPLY CTA ── */
+.apply-cta {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.btn-apply {
+    display: inline-block;
+    background-color: #0d1b4b;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-apply:hover {
+    background-color: #1a2a5e;
+}

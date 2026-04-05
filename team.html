@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Team | Barbara Hermann Steuerberatung GbR</title>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="fevicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .team-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5rem;
+        }
+        .team-member {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .team-member:last-child {
+            border-bottom: none;
+        }
+        .member-details {
+            flex: 1;
+        }
+        .member-name {
+            font-weight: 700;
+            color: #0d1b4b;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+        .member-info {
+            font-size: 0.88rem;
+            color: #333;
+            line-height: 1.4;
+        }
+        .member-info span {
+            display: block;
+        }
+        .member-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 2rem;
+            border: 2px solid #f0f0f0;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+        .team-member:hover .member-photo {
+            transform: scale(1.1);
+        }
+        .emeriti-section {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #0d1b4b;
+        }
+        .emeriti-title {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #0d1b4b;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .emeriti-list {
+            font-size: 0.82rem;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-block">
+                <div class="logo-title">Barbara Hermann</div>
+                <div class="logo-subtitle">Steuerberatung GbR</div>
+            </div>
+            
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li class="nav-item has-dropdown">
+                    <a href="index.html" class="nav-link">Home <span class="arrow">▾</span></a>
+                    <ul class="dropdown">
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="fakten.html">Fakten</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="kanzleileitung.html" class="nav-link">Kanzleileitung <span class="arrow">▾</span></a>
+                    <ul class="dropdown">
+                        <li><a href="vita.html">Vita</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="kanzlei.html" class="nav-link">Kanzlei <span class="arrow">▾</span></a>
+                    <ul class="dropdown">
+                        <li><a href="team.html">Das Team</a></li>
+                        <li><a href="kooperationen.html">Kooperationen</a></li>
+                        <li><a href="mitgliedschaften.html">Mitgliedschaften</a></li>
+                        <li><a href="wir-stellen-ein.html">Wir stellen ein</a></li>
+                        <li><a href="engagement.html">Gemeinnütziges Engagement</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="mandantenbereich.html" class="nav-link">Mandantenbereich</a>
+                </li>
+                <li class="nav-item">
+                    <a href="digitalisierung.html" class="nav-link">Digitalisierung</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+        <!-- PAGE BANNER -->
+        <header class="page-banner">
+            <div class="banner-content">
+                <h1>Das Team</h1>
+                <p>Barbara Hermann Steuerberatung GbR</p>
+            </div>
+        </header>
+
+        <!-- MAIN LAYOUT -->
+        <div class="layout-container">
+            <!-- LEFT CONTENT -->
+            <main class="main-content">
+                <h2 class="section-heading-band">Das Team</h2>
+
+                <div class="team-list">
+                    <!-- Roland Dietz -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Roland Dietz</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachangestellter</span>
+                                <span>Standort: Bad Salzschlirf</span>
+                                <span>Eintritt: 1991</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Roland Dietz" class="member-photo">
+                    </div>
+
+                    <!-- Ina Sperling -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Ina Sperling</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachwirtin</span>
+                                <span>Standort: Fulda</span>
+                                <span>Eintritt: 2011</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Ina Sperling" class="member-photo">
+                    </div>
+
+                    <!-- Jutta Georg -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Jutta Georg</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachwirtin</span>
+                                <span>Standort: Alsfeld</span>
+                                <span>Ehemals Sozietät Schornstein</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Jutta Georg" class="member-photo">
+                    </div>
+
+                    <!-- Andrea Müller -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Andrea Müller</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachwirtin</span>
+                                <span>Standort: Alsfeld</span>
+                                <span>Ehemals Sozietät Schornstein</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Andrea Müller" class="member-photo">
+                    </div>
+
+                    <!-- Ilona Krug -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Ilona Krug</div>
+                            <div class="member-info">
+                                <span>Position: Industriekauffrau</span>
+                                <span>Standort: Alsfeld</span>
+                                <span>Ehemals Sozietät Schornstein</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Ilona Krug" class="member-photo">
+                    </div>
+
+                    <!-- Burkardt Barth -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Burkardt Barth</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachangestellter</span>
+                                <span>Standort: Alsfeld</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Burkardt Barth" class="member-photo">
+                    </div>
+
+                    <!-- Birgit Merle -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Birgit Merle</div>
+                            <div class="member-info">
+                                <span>Position: Buchhalterin</span>
+                                <span>Standort: Alsfeld</span>
+                                <span>Ehemals Sozietät Schornstein</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Birgit Merle" class="member-photo">
+                    </div>
+
+                    <!-- Maryna Möltgen -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Maryna Möltgen</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachangestellte, Betriebswirtin</span>
+                                <span>Standort: Fulda</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Maryna Möltgen" class="member-photo">
+                    </div>
+
+                    <!-- Kevin Zafar -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Kevin Zafar</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachangestellter (Auszubildender)</span>
+                                <span>Standort: Fulda</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Kevin Zafar" class="member-photo">
+                    </div>
+
+                    <!-- Svetlana Samiguilina -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Svetlana Samiguilina</div>
+                            <div class="member-info">
+                                <span>Position: Lohnbuchhalterin</span>
+                                <span>Standort: Fulda</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Svetlana Samiguilina" class="member-photo">
+                    </div>
+
+                    <!-- Sara Karakus -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Sara Karakus</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachangestellt Lohnbuchhalterin</span>
+                                <span>Standort: Fulda</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Sara Karakus" class="member-photo">
+                    </div>
+
+                    <!-- Manuela Webersinke -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Manuela Webersinke</div>
+                            <div class="member-info">
+                                <span>Position: Steuerfachwirtin, Juristin</span>
+                                <span>Standort: Fulda</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Manuela Webersinke" class="member-photo">
+                    </div>
+
+                    <!-- Lidia Pfannenstiel -->
+                    <div class="team-member">
+                        <div class="member-details">
+                            <div class="member-name">Lidia Pfannenstiel</div>
+                            <div class="member-info">
+                                <span>Position: Steurfachwirtin</span>
+                                <span>Standort: Fulda</span>
+                            </div>
+                        </div>
+                        <img src="fevicon.png" alt="Lidia Pfannenstiel" class="member-photo">
+                    </div>
+                </div>
+
+                <!-- Emeriti / In Memoriam Items -->
+                <div class="emeriti-section">
+                    <div class="emeriti-title">Ehemalige Mitarbeiter & In Memoriam</div>
+                    <div class="emeriti-list">
+                        <p>Christel Dietz, Steuerassistentin (Eintritt 1963) i.R.</p>
+                        <p>Ella Billmann, Steuerfachangestellt i.R.</p>
+                        <p>Elke Stockmann, Industriekauffrau (Eintritt 1995, +01.02.2012)</p>
+                        <p>Thekla Pfohl (Eintritt 1982) +2021</p>
+                    </div>
+                </div>
+
+            </main>
+
+            <!-- RIGHT SIDEBAR -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h4 class="sidebar-title">Öffnungszeiten</h4>
+                    <div class="opening-hours">
+                        <div class="hours-row">
+                            <span>Mo.–Fr.</span>
+                            <span>08:00–16:30</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Sa.</span>
+                            <span>Geschlossen</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>So.</span>
+                            <span>Geschlossen</span>
+                        </div>
+                        <p class="holiday-note">Feiertage ausgeschlossen</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-logos">
+                    <img src="datev.png" alt="DATEV Mitglied">
+                    <img src="stbv.png" alt="StBV Hessen">
+                    <img src="stbk.png" alt="StBK Hessen">
+                    <p style="font-size: 0.74rem; color: #555; text-align: center; margin-top: 0.5rem;">Mitglied des Steuerberaterverbands Hessen</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-left">
+            Bad Salzschlirf / Fulda / Alsfeld · 06.09.2025
+        </div>
+        <div class="footer-right">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
